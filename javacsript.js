@@ -16,13 +16,13 @@ userFormElement.addEventListener("submit", (event) => {
   const email = document.getElementById("emailInput").value;
   const phone = document.getElementById("phoneInput").value;
 
-  if (!email.endsWith("@gmail.com")) {
-    alert("only @gmail.com");
+  if (!email.endsWith("@gmail.com") && !email.endsWith("@Ukr.net")) {
+    alert("gmail only @gmail.com or @Ukr.net");
     return;
   }
 
-  if (!phone.startsWith("+")) {
-    alert("only with +");
+  if (!phone.startsWith("+38")) {
+    alert("phone only with +38");
     return;
   }
 
